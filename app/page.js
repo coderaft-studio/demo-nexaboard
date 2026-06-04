@@ -4,6 +4,7 @@ import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
 import DashboardView from "@/components/views/DashboardView";
 import ProdukView from "@/components/views/ProdukView";
+import PesananView from "@/components/views/PesananView";
 import PlaceholderView from "@/components/views/PlaceholderView";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
   const renderView = () => {
     if (active === "dashboard") return <DashboardView />;
     if (active === "produk") return <ProdukView />;
+    if (active === "pesanan") return <PesananView />;
     return <PlaceholderView label={active} />;
   };
 
