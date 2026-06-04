@@ -18,7 +18,7 @@ export default function Sidebar({ active, setActive }) {
       {/* Logo */}
       <div className="h-16 flex items-center px-4 border-b border-slate-700/50 gap-3">
         <div className="w-8 h-8 bg-violet-600 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0">N</div>
-        {!collapsed && <span className="text-white font-bold text-lg">NexaBoard</span>}
+        {!collapsed && <span className="text-white font-bold text-lg">CoderaftBoard</span>}
         <button onClick={() => setCollapsed(!collapsed)}
           className="ml-auto text-slate-400 hover:text-white transition-colors text-xs">
           {collapsed ? "▶" : "◀"}

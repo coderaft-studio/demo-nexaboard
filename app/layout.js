@@ -4,7 +4,7 @@ import "./globals.css";
 const geist = Geist({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "NexaBoard — Dashboard Manajemen Bisnis",
+  title: "CoderaftBoard — Dashboard Manajemen Bisnis",
   description: "Platform dashboard modern untuk UMKM dan toko online. Kelola produk, pesanan, dan laporan dalam satu tampilan.",
 };
 
