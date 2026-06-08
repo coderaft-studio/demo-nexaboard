@@ -78,7 +78,7 @@ export default function Sidebar({ active, setActive }) {
               }}
               onMouseEnter={e => { if (!isActive) { e.currentTarget.style.background = "rgba(0,255,136,0.05)"; e.currentTarget.style.color = TEXT; } }}
               onMouseLeave={e => { if (!isActive) { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = MUTED; } }}>
-              <span className="text-base flex-shrink-0" style={{ filter: isActive ? `drop-shadow(0 0 6px ${NEON})` : "none" }}>{m.icon}</span>
+              <span style={{ width:"20px", textAlign:"center", flexShrink:0, fontSize:"15px", filter: isActive ? `drop-shadow(0 0 6px ${NEON})` : "none" }}>{m.icon}</span>
               {!collapsed && (
                 <span className="text-xs font-semibold tracking-wide">{m.label}</span>
               )}
