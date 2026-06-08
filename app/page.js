@@ -5,6 +5,9 @@ import Header from "@/components/Header";
 import DashboardView from "@/components/views/DashboardView";
 import ProdukView from "@/components/views/ProdukView";
 import PesananView from "@/components/views/PesananView";
+import PelangganView  from "@/components/views/PelangganView";
+import LaporanView    from "@/components/views/LaporanView";
+import PengaturanView from "@/components/views/PengaturanView";
 import PlaceholderView from "@/components/views/PlaceholderView";
 
 export default function Home() {
@@ -12,17 +15,20 @@ export default function Home() {
 
   const renderView = () => {
     if (active === "dashboard") return <DashboardView />;
-    if (active === "produk") return <ProdukView />;
-    if (active === "pesanan") return <PesananView />;
+    if (active === "produk")    return <ProdukView />;
+    if (active === "pesanan")   return <PesananView />;
+    if (active === "pelanggan") return <PelangganView />;
+    if (active === "laporan")    return <LaporanView />;
+    if (active === "pengaturan") return <PengaturanView />;
     return <PlaceholderView label={active} />;
   };
 
   return (
-    <div className="flex h-screen overflow-hidden bg-slate-100">
+    <div className="flex h-screen overflow-hidden" style={{ background: "#080810" }}>
       <Sidebar active={active} setActive={setActive} />
       <div className="flex-1 flex flex-col overflow-hidden">
         <Header active={active} />
-        <main className="flex-1 overflow-y-auto p-6">
+        <main className="flex-1 overflow-y-auto p-6" style={{ background: "#080810" }}>
           {renderView()}
         </main>
       </div>
