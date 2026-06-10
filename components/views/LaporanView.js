@@ -111,7 +111,7 @@ async function pdfDownload(periodLabel, d, revC, ordC, cusC, avgC) {
   // ── Footer ──
   y = 285;
   line(y, [180,220,180]); y += 4;
-  txt("Laporan ini dibuat secara otomatis oleh CoderaftBoard · coderaft-studio.vercel.app", M, y, 7, false, [120,160,120]);
+  txt("Laporan ini dibuat secara otomatis oleh CoderaftBoard · coderaft.web.id", M, y, 7, false, [120,160,120]);
 
   doc.save(`laporan-coderaftboard-${periodLabel.replace(/\s/g,"-")}.pdf`);
 }
