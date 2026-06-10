@@ -7,7 +7,7 @@ import Header  from "@/components/Header";
 const NEON = "#00ff88";
 
 const ViewLoader = () => (
-  <div style={{ display:"flex", flex:1, alignItems:"center", justifyContent:"center", background:"#080810" }}>
+  <div style={{ display:"flex", height:"calc(100vh - 128px)", alignItems:"center", justifyContent:"center" }}>
     <div style={{ textAlign:"center" }}>
       <div style={{ width:"32px", height:"32px", border:`2px solid rgba(0,255,136,0.15)`, borderTop:`2px solid ${NEON}`, borderRadius:"50%", animation:"spin 0.7s linear infinite", margin:"0 auto 10px" }}/>
       <div style={{ color:"rgba(0,255,136,0.4)", fontSize:"11px", letterSpacing:"0.1em" }}>MEMUAT</div>
